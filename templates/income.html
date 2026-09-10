@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Income - ExpenseTracker</title>
+</head>
+
+<body>
+
+    <h1>Add Income</h1>
+
+    <form action="/income" method="post">
+
+        <label>Description:</label>
+        <br>
+        <input type="text" name="description" required>
+
+        <br><br>
+
+        <label>Amount:</label>
+        <br>
+        <input type="number" name="amount" step="0.01" min="0.01" required>
+
+        <br><br>
+
+        <button type="submit">Add Income</button>
+
+    </form>
+
+    <br>
+
+    <a href="/">Back to Home</a>
+
+</body>
+
+</html>

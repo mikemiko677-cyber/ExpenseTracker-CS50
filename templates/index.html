@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseTracker</title>
+</head>
+
+<body>
+
+    <h1>ExpenseTracker</h1>
+
+    {% if session.get("user_id") %}
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/add">Add Expense</a>
+        <a href="/income">Add Income</a>
+        <a href="/logout">Logout</a>
+    </nav>
+
+    <h2>Welcome to ExpenseTracker!</h2>
+
+    <p>Track your income and expenses in one simple place.</p>
+
+    <h2>Money Summary</h2>
+
+    <p>Total Income: {{ income }}</p>
+    <p>Total Expenses: {{ expenses }}</p>
+    <p>Current Balance: {{ balance }}</p>
+
+    <h2>Your Transactions</h2>
+
+    {% for transaction in transactions %}
+
+    <p>
+        <strong>{{ transaction.type }}</strong> - {{ transaction.description }} - {{ transaction.amount }} - {{ transaction.category }} - {{ transaction.created_at }}
+    </p>
+
+    <form action="/delete/{{ transaction.id }}" method="post">
+        <button type="submit">Delete</button>
+    </form>
+
+    <br> {% endfor %} {% else %}
+
+    <h2>Track your money easily</h2>
+
+    <p>Create an account to start tracking your income and expenses.</p>
+
+    <nav>
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    </nav>
+
+    {% endif %}
+
+</body>
+
+</html>

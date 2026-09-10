@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense - ExpenseTracker</title>
+</head>
+
+<body>
+
+    <h1>Add Expense</h1>
+
+    <form action="/add" method="post">
+
+        <label>Description:</label>
+        <br>
+        <input type="text" name="description" required>
+
+        <br><br>
+
+        <label>Amount:</label>
+        <br>
+        <input type="number" name="amount" step="0.01" min="0.01" required>
+
+        <br><br>
+
+        <label>Category:</label>
+        <br>
+        <select name="category" required>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="School">School</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Add Expense</button>
+
+    </form>
+
+    <br>
+
+    <a href="/">Back to Home</a>
+
+</body>
+
+</html>
