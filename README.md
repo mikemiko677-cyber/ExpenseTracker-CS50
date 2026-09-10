@@ -35,3 +35,10 @@ I also chose to keep the application intentionally simple. Instead of adding man
 ExpenseTracker demonstrates how Python, Flask, SQL, HTML, and CSS can work together to create a functional web application. The project also gave me experience with databases, user authentication, sessions, forms, SQL queries, validation, and connecting a frontend to backend logic.
 
 AI assistance: ChatGPT was used to help explain programming concepts, troubleshoot errors, debug parts of the application, and assist with developing some of the code. I reviewed and tested the code while building the project.
+---
+
+## 🎓 CS50x Certificate
+
+I successfully completed Harvard University's CS50x: Introduction to Computer Science.
+
+![CS50x Certificate](CS50x.png)
