@@ -33,8 +33,6 @@ Another design decision was to require users to log in before adding or viewing 
 I also chose to keep the application intentionally simple. Instead of adding many unnecessary features, I focused on the core functions that make the application useful: authentication, adding income, adding expenses, viewing transactions, calculating a balance, and deleting transactions. This allowed me to build a complete application while keeping the code understandable.
 
 ExpenseTracker demonstrates how Python, Flask, SQL, HTML, and CSS can work together to create a functional web application. The project also gave me experience with databases, user authentication, sessions, forms, SQL queries, validation, and connecting a frontend to backend logic.
-
-AI assistance: ChatGPT was used to help explain programming concepts, troubleshoot errors, debug parts of the application, and assist with developing some of the code. I reviewed and tested the code while building the project.
 ---
 
 ## 🎓 CS50x Certificate
